@@ -1,451 +1,860 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>Lynn M | Official Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description"
+        content="Lynn M - Âm nhạc chữa lành, piano thư giãn và những giai điệu truyền cảm hứng giúp tâm hồn bình yên hơn mỗi ngày.">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="keywords"
+        content="Lynn M, nhạc chữa lành, piano thư giãn, healing music, relaxing piano">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    <meta name="author" content="Lynn M">
 
-html{
-    scroll-behavior:smooth;
-}
+    <meta property="og:title" content="Lynn M | Âm Nhạc Chữa Lành">
 
-body{
+    <meta property="og:description"
+        content="Những giai điệu nhẹ nhàng dành cho tâm hồn.">
 
-    font-family:'Poppins',sans-serif;
+    <meta property="og:image"
+        content="images/banner.jpg">
 
-    background:#f7f8fc;
+    <meta property="og:type"
+        content="website">
 
-    color:#222;
+    <title>
 
-    line-height:1.7;
+        Lynn M | Âm Nhạc Chữa Lành Tâm Hồn
 
-}
+    </title>
 
-a{
+    <link rel="icon"
+        href="images/logo.png">
 
-    text-decoration:none;
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
 
-}
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
-img{
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    max-width:100%;
-
-}
-
-header{
-
-    position:fixed;
-
-    top:0;
-
-    left:0;
-
-    width:100%;
-
-    padding:22px 8%;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    background:rgba(255,255,255,.88);
-
-    backdrop-filter:blur(18px);
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-
-    z-index:999;
-
-}
-
-.logo{
-
-    font-size:30px;
-
-    font-weight:700;
-
-    color:#8e63ff;
-
-}
-
-nav{
-
-    display:flex;
-
-    gap:35px;
-
-}
-
-nav a{
-
-    color:#444;
-
-    font-weight:500;
-
-    transition:.3s;
-
-}
-
-nav a:hover{
-
-    color:#8e63ff;
-
-}    
-.hero{
-
-    min-height:100vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    text-align:center;
-
-    background:linear-gradient(180deg,#ffffff,#eef4ff);
-
-    padding:120px 10% 80px;
-
-}
-
-.hero-content{
-
-    max-width:850px;
-
-}
-
-.hero h1{
-
-    font-size:64px;
-
-    font-weight:700;
-
-    color:#222;
-
-    margin-bottom:25px;
-
-}
-
-.hero p{
-
-    font-size:22px;
-
-    color:#666;
-
-    margin-bottom:40px;
-
-}
-
-.button{
-
-    display:inline-block;
-
-    padding:18px 42px;
-
-    border-radius:50px;
-
-    background:#8e63ff;
-
-    color:white;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
-
-.button:hover{
-
-    background:#7447ef;
-
-    transform:translateY(-4px);
-
-}
-.music{
-
-    padding:100px 8%;
-
-    background:#ffffff;
-
-}
-
-.music h2{
-
-    text-align:center;
-
-    font-size:42px;
-
-    margin-bottom:60px;
-
-    color:#222;
-
-}
-
-.music-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:30px;
-
-}
-
-.card{
-
-    background:#ffffff;
-
-    padding:35px;
-
-    border-radius:20px;
-
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-
-    transition:.3s;
-
-}
-
-.card:hover{
-
-    transform:translateY(-8px);
-
-    box-shadow:0 20px 45px rgba(0,0,0,.15);
-
-}
-
-.card h3{
-
-    margin-bottom:18px;
-
-    font-size:24px;
-
-    color:#333;
-
-}
-
-.card p{
-
-    color:#666;
-
-    font-size:16px;
-
-}
-    
-.about,
-.contact{
-
-    padding:100px 8%;
-
-    text-align:center;
-
-}
-
-.about{
-
-    background:#f7f8fc;
-
-}
-
-.about h2,
-.contact h2{
-
-    font-size:42px;
-
-    margin-bottom:25px;
-
-    color:#222;
-
-}
-
-.about p{
-
-    max-width:850px;
-
-    margin:auto;
-
-    font-size:18px;
-
-    color:#666;
-
-}
-
-.contact{
-
-    background:#ffffff;
-
-}
-
-.social{
-
-    margin-top:35px;
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-}
-
-.social a{
-
-    padding:15px 30px;
-
-    border-radius:40px;
-
-    background:#8e63ff;
-
-    color:white;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
-
-.social a:hover{
-
-    background:#7447ef;
-
-    transform:translateY(-4px);
-
-}
-
-footer{
-
-    padding:40px;
-
-    text-align:center;
-
-    background:#eceef7;
-
-    color:#777;
-
-    font-size:15px;
-
-}
-
-</style>
+    <link rel="stylesheet"
+        href="css/style.css">
 
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
-    <div class="logo">Lynn M</div>
+    <div class="container">
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#music">Music</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <a href="#home"
+            class="logo">
 
-</header>
+            <img src="images/logo.png"
+                alt="Lynn M">
 
-<section class="hero" id="home">
+        </a>
 
-    <div class="hero-content">
+        <nav class="navbar">
 
-        <h1>
-            Music That Brings Peace
-        </h1>
+            <ul>
 
-        <p>
-            Gentle music, inspirational songs, peaceful piano,
-            and relaxing melodies for everyday life.
-        </p>
+                <li>
 
-        <a class="button"
-           href="https://youtube.com/@LynnM"
-           target="_blank">
-           Visit YouTube
+                    <a href="#home">
+
+                        Trang chủ
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#featured">
+
+                        Video nổi bật
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#playlist">
+
+                        Playlist
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#about">
+
+                        Về Lynn M
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#contact">
+
+                        Liên hệ
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <a href="https://www.youtube.com/@LynnM"
+
+            target="_blank"
+
+            class="btn-youtube">
+
+            ▶ YouTube
+
         </a>
 
     </div>
 
-</section>
-<section id="music" class="music">
+</header>
 
-    <h2>Latest Music</h2>
+<main>
 
-    <div class="music-grid">
+<section id="home"
 
-        <div class="card">
-            <h3>🎵 Inspirational Songs</h3>
-            <p>Meaningful songs that encourage, heal and inspire everyday life.</p>
-        </div>
+    class="hero">
 
-        <div class="card">
-            <h3>🎹 Instrumental Music</h3>
-            <p>Peaceful piano and relaxing melodies for focus, study and rest.</p>
-        </div>
+    <div class="hero-background">
 
-        <div class="card">
-            <h3>🌿 Healing Collection</h3>
-            <p>Music for relaxation, sleep, meditation and inner peace.</p>
+        <img src="images/banner.jpg"
+
+            alt="Banner Lynn M">
+
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+
+                ✨ Lynn M Official
+
+            </span>
+
+            <h1>
+
+                Âm Nhạc Chữa Lành
+                <br>
+                Cho Một Cuộc Sống
+                Bình Yên
+
+            </h1>
+
+            <p>
+
+                Những ca khúc truyền cảm hứng,
+                piano thư giãn
+                và giai điệu nhẹ nhàng
+                giúp bạn tìm lại sự cân bằng
+                giữa nhịp sống hiện đại.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="https://www.youtube.com/@LynnM"
+
+                    target="_blank"
+
+                    class="btn-primary">
+
+                    ▶ Nghe trên YouTube
+
+                </a>
+
+                <a href="#featured"
+
+                    class="btn-secondary">
+
+                    Khám phá ngay
+
+                </a>
+
+            </div>
+
         </div>
 
     </div>
 
 </section>
 
+<section class="welcome">
+
+    <div class="container">
+
+        <div class="welcome-box">
+
+            <span>
+
+                Chào mừng đến với Lynn M
+
+            </span>
+
+            <h2>
+
+                Một nơi để lắng nghe,
+                thư giãn
+                và nuôi dưỡng tâm hồn.
+
+            </h2>
+
+            <p>
+
+                Mỗi giai điệu được tạo nên với mong muốn
+                mang lại sự bình yên,
+                chữa lành cảm xúc
+                và lan tỏa những giá trị tích cực
+                đến mọi người.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="featured" class="featured">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Video nổi bật
+
+            </span>
+
+            <h2>
+
+                Những giai điệu đang được yêu thích
+
+            </h2>
+
+            <p>
+
+                Khám phá những ca khúc, bản nhạc và video nổi bật được cộng đồng yêu thích trên kênh Lynn M.
+
+            </p>
+
+        </div>
+
+        <div class="featured-grid">
+
+            <article class="video-card">
+
+                <div class="video-thumbnail">
+
+                    <img src="images/thumb1.jpg"
+                        alt="Giai Điệu Nhân Sinh">
+
+                </div>
+
+                <div class="video-content">
+
+                    <span class="video-category">
+
+                        Truyền cảm hứng
+
+                    </span>
+
+                    <h3>
+
+                        Giai Điệu Nhân Sinh
+
+                    </h3>
+
+                    <p>
+
+                        Những ca khúc mang thông điệp tích cực,
+                        giúp mỗi ngày trở nên nhẹ nhàng hơn.
+
+                    </p>
+
+                    <a href="https://www.youtube.com/@LynnM"
+
+                        target="_blank"
+
+                        class="video-button">
+
+                        Xem video
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="video-card">
+
+                <div class="video-thumbnail">
+
+                    <img src="images/thumb2.jpg"
+                        alt="Piano Thư Giãn">
+
+                </div>
+
+                <div class="video-content">
+
+                    <span class="video-category">
+
+                        Piano
+
+                    </span>
+
+                    <h3>
+
+                        Piano Thư Giãn
+
+                    </h3>
+
+                    <p>
+
+                        Không gian âm nhạc nhẹ nhàng
+                        giúp tập trung,
+                        học tập
+                        và nghỉ ngơi.
+
+                    </p>
+
+                    <a href="https://www.youtube.com/@LynnM"
+
+                        target="_blank"
+
+                        class="video-button">
+
+                        Xem video
+
+                    </a>
+
+                </div>
+
+            </article>
+
+            <article class="video-card">
+
+                <div class="video-thumbnail">
+
+                    <img src="images/thumb3.jpg"
+                        alt="Healing Music">
+
+                </div>
+
+                <div class="video-content">
+
+                    <span class="video-category">
+
+                        Chữa lành
+
+                    </span>
+
+                    <h3>
+
+                        Healing Music
+
+                    </h3>
+
+                    <p>
+
+                        Những giai điệu bình yên
+                        giúp thư giãn tâm trí
+                        và cân bằng cảm xúc.
+
+                    </p>
+
+                    <a href="https://www.youtube.com/@LynnM"
+
+                        target="_blank"
+
+                        class="video-button">
+
+                        Xem video
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="playlist"
+
+    class="playlist">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Playlist
+
+            </span>
+
+            <h2>
+
+                Lắng nghe theo từng cảm xúc
+
+            </h2>
+
+        </div>
+
+        <div class="playlist-wrapper">
+
+            <div class="playlist-card">
+
+                <div class="playlist-icon">
+
+                    🎵
+
+                </div>
+
+                <h3>
+
+                    Ca Khúc Truyền Cảm Hứng
+
+                </h3>
+
+                <p>
+
+                    Những bài hát giúp tiếp thêm động lực
+                    và niềm tin vào cuộc sống.
+
+                </p>
+
+            </div>
+
+            <div class="playlist-card">
+
+                <div class="playlist-icon">
+
+                    🎹
+
+                </div>
+
+                <h3>
+
+                    Piano Thư Giãn
+
+                </h3>
+
+                <p>
+
+                    Giai điệu không lời
+                    dành cho học tập,
+                    làm việc
+                    và nghỉ ngơi.
+
+                </p>
+
+            </div>
+
+            <div class="playlist-card">
+
+                <div class="playlist-icon">
+
+                    🌿
+
+                </div>
+
+                <h3>
+
+                    Nhạc Chữa Lành
+
+                </h3>
+
+                <p>
+
+                    Bình yên hơn sau mỗi lần lắng nghe.
+
+                </p>
+
+            </div>
+
+            <div class="playlist-card">
+
+                <div class="playlist-icon">
+
+                    ☀️
+
+                </div>
+
+                <h3>
+
+                    Khởi Đầu Ngày Mới
+
+                </h3>
+
+                <p>
+
+                    Âm nhạc tích cực
+                    giúp bắt đầu ngày mới
+                    với nguồn năng lượng tốt đẹp.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 <section id="about" class="about">
 
-    <h2>About Lynn M</h2>
+    <div class="container about-grid">
 
-    <p>
-        Lynn M creates inspirational songs, peaceful piano music and relaxing instrumental melodies
-        to bring calm, hope and positive energy into everyday life.
-    </p>
+        <div class="about-image">
 
-</section>
+            <img src="images/logo.png"
+                 alt="Lynn M">
 
-<section id="contact" class="contact">
+        </div>
 
-    <h2>Follow Lynn M</h2>
+        <div class="about-content">
 
-    <div class="social">
+            <span class="section-tag">
 
-        <a href="https://youtube.com/@LynnM" target="_blank">YouTube</a>
+                Về Lynn M
 
-        <a href="#">Facebook</a>
+            </span>
 
-        <a href="#">Instagram</a>
+            <h2>
 
-        <a href="#">TikTok</a>
+                Âm nhạc được tạo nên
+                từ sự chân thành
+                và những cảm xúc bình yên.
+
+            </h2>
+
+            <p>
+
+                Lynn M là một không gian âm nhạc dành cho những người yêu
+                sự nhẹ nhàng, tích cực và chữa lành.
+                Mỗi video đều được chăm chút từ hình ảnh,
+                âm thanh đến thông điệp nhằm mang lại
+                những phút giây thư giãn và truyền cảm hứng.
+
+            </p>
+
+            <p>
+
+                Dù bạn đang học tập, làm việc,
+                nghỉ ngơi hay chỉ đơn giản muốn tìm một khoảng lặng,
+                Lynn M hy vọng những giai điệu này
+                sẽ luôn đồng hành cùng bạn.
+
+            </p>
+
+        </div>
 
     </div>
 
 </section>
 
-<footer>
+<section class="values">
 
-    © 2026 Lynn M. All Rights Reserved.
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Giá trị cốt lõi
+
+            </span>
+
+            <h2>
+
+                Điều Lynn M mong muốn lan tỏa
+
+            </h2>
+
+        </div>
+
+        <div class="values-grid">
+
+            <article class="value-card">
+
+                <h3>
+
+                    Bình yên
+
+                </h3>
+
+                <p>
+
+                    Mang đến những khoảng lặng
+                    giúp cân bằng cảm xúc
+                    trong cuộc sống bận rộn.
+
+                </p>
+
+            </article>
+
+            <article class="value-card">
+
+                <h3>
+
+                    Truyền cảm hứng
+
+                </h3>
+
+                <p>
+
+                    Những ca khúc và thông điệp
+                    tích cực giúp mỗi ngày
+                    trở nên ý nghĩa hơn.
+
+                </p>
+
+            </article>
+
+            <article class="value-card">
+
+                <h3>
+
+                    Đồng hành
+
+                </h3>
+
+                <p>
+
+                    Âm nhạc luôn ở bên bạn
+                    trong những khoảnh khắc vui,
+                    buồn hay cần một chút bình yên.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="quote">
+
+    <div class="container">
+
+        <blockquote>
+
+            “Âm nhạc không chỉ để lắng nghe,
+            mà còn để chữa lành.”
+
+        </blockquote>
+
+        <p>
+
+            — Lynn M
+
+        </p>
+
+    </div>
+
+</section>
+
+<section id="contact" class="social">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-tag">
+
+                Kết nối
+
+            </span>
+
+            <h2>
+
+                Theo dõi Lynn M
+
+            </h2>
+
+            <p>
+
+                Cập nhật những video mới nhất
+                trên các nền tảng chính thức.
+
+            </p>
+
+        </div>
+
+        <div class="social-links">
+
+            <a href="https://www.youtube.com/@LynnM"
+               target="_blank"
+               class="social-item">
+
+                <span>YouTube</span>
+
+            </a>
+
+            <a href="#"
+               class="social-item">
+
+                <span>Facebook</span>
+
+            </a>
+
+            <a href="#"
+               class="social-item">
+
+                <span>Instagram</span>
+
+            </a>
+
+            <a href="#"
+               class="social-item">
+
+                <span>TikTok</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+
+                <img src="images/logo.png"
+                     alt="Lynn M Logo"
+                     class="footer-logo">
+
+                <h3>Lynn M</h3>
+
+                <p>
+
+                    Âm nhạc chữa lành • Truyền cảm hứng • Bình yên mỗi ngày
+
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Khám phá</h4>
+
+                <ul>
+
+                    <li><a href="#home">Trang chủ</a></li>
+
+                    <li><a href="#featured">Video nổi bật</a></li>
+
+                    <li><a href="#playlist">Playlist</a></li>
+
+                    <li><a href="#about">Giới thiệu</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Theo dõi</h4>
+
+                <ul>
+
+                    <li>
+
+                        <a href="https://www.youtube.com/@LynnM"
+                           target="_blank">
+
+                            YouTube
+
+                        </a>
+
+                    </li>
+
+                    <li><a href="#">Facebook</a></li>
+
+                    <li><a href="#">Instagram</a></li>
+
+                    <li><a href="#">TikTok</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Lynn M. All Rights Reserved.
+
+            </p>
+
+            <p>
+
+                Được thiết kế với 💚 dành cho những người yêu âm nhạc và sự bình yên.
+
+            </p>
+
+        </div>
+
+    </div>
 
 </footer>
+
+<button
+    id="backToTop"
+    class="back-to-top"
+    aria-label="Lên đầu trang">
+
+    ↑
+
+</button>
+
+</main>
+
+<script src="js/script.js"></script>
 
 </body>
 
