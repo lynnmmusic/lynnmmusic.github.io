@@ -255,7 +255,83 @@ color:black;
 
 }
 
+.music{
+
+    padding:100px 10%;
+
+    background:#ffffff;
+
+}
+
+.music h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:60px;
+
+}
+
+.music-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#666;
+
+}
+
 footer{
+
+    padding:45px;
+
+    text-align:center;
+
+    background:#050505;
+
+    color:#999;
+
+}
+    
+    
+    
+    footer{
 
 padding:45px;
 
@@ -359,13 +435,40 @@ gap:12px;
 
 </section>
 
+</section>
+
+<section class="music">
+
+    <h2>Latest Music</h2>
+
+    <div class="music-grid">
+
+        <div class="card">
+            <h3>Healing Songs</h3>
+            <p>Inspirational songs with meaningful lyrics.</p>
+        </div>
+
+        <div class="card">
+            <h3>Piano Instrumental</h3>
+            <p>Relaxing piano for study, work and sleep.</p>
+        </div>
+
+        <div class="card">
+            <h3>Nature Sounds</h3>
+            <p>Peaceful music inspired by nature.</p>
+        </div>
+
+    </div>
+
+</section>
+
 <footer>
 
 © 2026 Lynn M. All Rights Reserved.
 
 </footer>
 
-</body>
+
 
 
 </body>
